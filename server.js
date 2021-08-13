@@ -33,4 +33,5 @@ app.post('/api', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
+  console.log('Url: http://localhost:8080');
 });
