@@ -23,12 +23,7 @@ function App() {
   fetch('/api', requestOptions)
   .then(response => response.json())
   .then(json => {
-    if(json.type === "Video"){
-      window.open(json.file, "_blank");
-    }
-    if(json.type === "Image"){
-      window.open(json.file, "_blank");
-    }
+    window.open(json.url, "_blank");
     setLoaderPop(false);
   });
     }
